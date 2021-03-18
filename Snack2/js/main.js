@@ -32,7 +32,7 @@ for (let i = 0; i < squadre.length; i++) {
   risultati.push(nome, falli);
 }
 
-  console.log(newDati);
+  console.log(risultati);
 
   // FUNCTION
 
@@ -46,12 +46,12 @@ function randomNumberInRange(min, max) {
 
 // ESEMPIO
 
-const nest = {
-  inizio: { a: 2, b: 4 },
-  fine: { c: 6, d: 5 }
-};
-
-const { inizio : {a: inizioA, b : inizioB }, fine : {c: fineB, d:fineD }} = nest;
-
-console.log(inizioA);
-console.log(fineD);
+// const nest = {
+//   inizio: { a: 2, b: 4 },
+//   fine: { c: 6, d: 5 }
+// };
+//
+// const { inizio : {a: inizioA, b : inizioB }, fine : {c: fineB, d:fineD }} = nest;
+//
+// console.log(inizioA);
+// console.log(fineD);

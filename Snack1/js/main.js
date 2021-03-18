@@ -32,15 +32,15 @@
 
 const bici = [
   {
-    name: 'Scott',
+    nome: 'Scott',
     peso: 10
   },
   {
-    name: 'Mountain bike',
+    nome: 'Mountain bike',
     peso: 8
   },
   {
-    name: 'Lina',
+    nome: 'Lina',
     peso: 1
   }
 ];
@@ -58,6 +58,6 @@ for (let i = 0; i < bikes.length; i++){
   console.log(peso);
   document.getElementById('container').innerHTML =
   `<ul>
-      <li>Nome: ${name}</li>
-      <li>Peso: ${peso}</li>
+      <li> nome: ${name}</li>
+      <li> peso: ${peso}</li>
   </ul>`;
