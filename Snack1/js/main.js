@@ -47,17 +47,13 @@ const bici = [
 
 let biciLeggera = bici[0];
 
-for (let i = 0; i < bikes.length; i++){
+for (let i = 0; i < bici.length; i++){
   if (bici[i].peso < biciLeggera.peso){
     biciLeggera = bici[i];
   }
+}
 
-  console.log(biciLeggera);
+console.log(biciLeggera);
 
-  const {peso, nome} = biciLeggera;
-  console.log(peso);
-  document.getElementById('container').innerHTML =
-  `<ul>
-      <li> nome: ${name}</li>
-      <li> peso: ${peso}</li>
-  </ul>`;
+const {peso, nome} = biciLeggera;
+console.log(peso);
