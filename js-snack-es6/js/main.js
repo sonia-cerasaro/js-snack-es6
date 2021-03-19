@@ -43,16 +43,42 @@ const male = cats.filter((element) => element.gender == 'male');
 console.log(female);
 console.log(male);
 
+// Asegno l'opacita' fiocco ai gatti femmina piu' piccoli
+
+var gattiFemmineArray = [];
+
 female.forEach((element) => {
-  $('#lista').append(`<li class="azzurro">${element.nome} e' di colore ${element.colour} <i class="fas fa-ribbon"></i> </li>`);
+  var opacitaGattoF;
+  if (element.age <= 5){
+    opacitaGattoF = 1
+  } else {
+    opacitaGattoF = 0.5
+  }
+  var item = {...element, opacity: opacitaGattoF}
+
+  gattiFemmineArray.push(item);
+
+  $('#lista').append(`<li class="rosa">${element.nome} e' di colore ${element.colour} <i class="fas fa-ribbon" style="opacity: ${opacitaGattoF}"></i> </li>`);
 });
 
+console.log(gattiFemmineArray)
 
+// Asegno l'opacita' fiocco ai gatti maschi piu' grandi
 
+var gattiMaschiArray = [];
 
+male.forEach((element) => {
+  var opacitaGattoM;
+  if (element.age <= 5){
+    opacitaGattoM = 1
+  } else {
+    opacitaGattoM = 0.5
+  }
+  var item = {...element, opacity: opacitaGattoM}
 
+  gattiMaschiArray.push(item);
 
+  $('#lista').append(`<li class="azzurro">${element.nome} e' di colore ${element.colour} <i class="fas fa-ribbon" style="opacity: ${opacitaGattoM}"></i> </li>`);
+});
 
-// Milestone 3
-// Creare un nuovo array con prima tutti i gattini femmina e poi tutti i gattini maschio,
-// inserendo solamente nome e colore e colore e opacità del fiocco per ogni gatto.
+console.log(gattiMaschiArray)
