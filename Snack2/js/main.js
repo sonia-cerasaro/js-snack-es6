@@ -16,7 +16,7 @@ var squadre = [
     falli: 0
   },
   {
-    nome: "Troll",
+    nome: "Trolls",
     puntifatti: 0,
     falli: 0
   }
