@@ -44,7 +44,7 @@ console.log(female);
 console.log(male);
 
 female.forEach((element) => {
-  $('#lista').append(`<li>${element.nome} e' di colore ${element.colour} <i class="fas fa-ribbon"></i> </li>`);
+  $('#lista').append(`<li class="azzurro">${element.nome} e' di colore ${element.colour} <i class="fas fa-ribbon"></i> </li>`);
 });
 
 
